@@ -20,8 +20,8 @@ export const Container = styled.div`
         height: 80px;
         border-radius: 100%;
         position: absolute;
-        top: 15px;
-        left: 20px;
+        top: 30px;
+        left: 35px;
         background-color: white;
 
         @media(min-width: 768px){
@@ -43,7 +43,7 @@ export const Container = styled.div`
 
 
         .card-content {
-            width: 375px;
+            width: 300px;
             height: 145px;
             text-align:left;
             padding: 1.5rem;
