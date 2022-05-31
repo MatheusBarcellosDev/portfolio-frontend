@@ -4,7 +4,7 @@ import api from "../api/Api";
 
 export const AuthContext = React.createContext({});
 
-const { URL_LOGIN, URL_GET_TESTIMONIALS, PASSWORD, USERNAME } = process.env;
+const { REACT_APP_URL_LOGIN, REACT_APP_URL_GET_TESTIMONIALS, REACT_APP_PASSWORD, REACT_APP_USERNAME } = process.env;
 
 export const AuthProvider = (props) => {
     const [user, setUser] = useState([]);
@@ -12,13 +12,13 @@ export const AuthProvider = (props) => {
 
     useEffect(() => {
         async function login() {
-            const  token = await api.post(URL_LOGIN, {
-                username: USERNAME,
-                password: PASSWORD,
+            const  token = await api.post(REACT_APP_URL_LOGIN, {
+                username: REACT_APP_USERNAME,
+                password: REACT_APP_PASSWORD,
             });
             await setIsToken(token.data.token);
             if(tokenApi !== null) {
-                const user = await api.get(URL_GET_TESTIMONIALS, {
+                const user = await api.get(REACT_APP_URL_GET_TESTIMONIALS, {
                     headers: {
                         authorization: `${tokenApi}`,
                     },
