@@ -69,7 +69,7 @@ const Testimonials = () => {
     return (
         <Container>
             <div className="title-testimonials">
-                <h2>Testimonials</h2>
+                <h2>Comentários</h2>
             </div>
             <div className="tests">
                 <Carousel

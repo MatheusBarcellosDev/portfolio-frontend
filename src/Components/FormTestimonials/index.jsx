@@ -65,9 +65,9 @@ const FormTestimonials = ({ handleModalClose, handleModalisOpen2 }) => {
 
         return (
             <Container onSubmit={handleSubmit(onSubmit)}>
-                <h2>Deixe seu comentario</h2>
+                <h2>Deixe seu comentário</h2>
                 <label>
-                    Comentario
+                    Comentário
                     <div className="form-group">
                         <textarea
                             style={{ resize: "none" }}

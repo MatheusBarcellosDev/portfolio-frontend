@@ -17,6 +17,16 @@ export const Nav = styled.header`
 
     .main-name{
         white-space: nowrap;
+        font-size: 1.1rem;
+        
+       a{
+            text-decoration: none;
+            color: #fff;
+       }
+
+        @media(min-width: 768px){
+            font-size: 1.4rem;
+        }
     }
 
     .first-letter{

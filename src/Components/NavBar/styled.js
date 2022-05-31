@@ -1,16 +1,18 @@
 import styled from "styled-components";
 
 export const Nav = styled.nav`
-    width: 260px;
-    background-color: #222222;
+    width: 200px;
+    background-color: #2F2F2F;
     position: fixed;
-    height: calc(85% - 250px);
+    height: calc(85% - 70px);
     border-radius: 20px 0 0 20px;
     top: 50px;
     padding: 0 30px;
     transition: 0.6s;
     text-align: left;
     right: ${props => (props.show ? 0 : "-100%")};
+    z-index: 1;
+
 
     .iconReact {
         font-size: 3rem;

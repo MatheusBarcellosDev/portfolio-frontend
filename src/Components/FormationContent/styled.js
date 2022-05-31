@@ -10,12 +10,16 @@ export const Container = styled.section`
         text-align: left;
 
         h3{
-            font-size: 1.4rem;
+            font-size: 1rem;
             font-weight: bold;
             letter-spacing: 0.10rem;
             position: relative;
             display: inline-block;
             padding-bottom: 0.40rem;
+
+            @media(min-width: 768px){
+                font-size: 1.4rem;
+            }
         }
 
         h3:before{
@@ -52,10 +56,14 @@ export const Container = styled.section`
         
 
         h4 {
-            font-size: 1rem;
+            font-size: 0.8rem;
             letter-spacing: 0.10rem;
             padding: 1rem 0;
             color: #AAAAAA;
+
+            @media(min-width: 768px){
+                font-size: 1rem;
+            }
         }
 
         h4:hover {

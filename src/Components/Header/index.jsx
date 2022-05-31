@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import NavBar from "../NavBar";
 import { Nav } from './styled'
+import { Link } from 'react-router-dom'
 
 
 const Header = () => {
@@ -12,7 +13,11 @@ const Header = () => {
         <Nav>
             <div className="container-name">
                 <div className="first-letter">M</div>
-                <div className="main-name">Matheus Barcellos</div>
+                <div className="main-name">
+                    <Link to="/">
+                        Matheus Barcellos
+                    </Link>
+                </div>
             </div>
             <GiHamburgerMenu
                 className="hamburger"

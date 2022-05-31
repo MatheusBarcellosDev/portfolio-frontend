@@ -4,7 +4,7 @@ const SubHeader = () => {
     return (
         <Container>
             <div className="title-page">
-                <h1>Resume</h1>
+                <h1>Formações</h1>
             </div>
         </Container>
     )

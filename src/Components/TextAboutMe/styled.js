@@ -13,8 +13,12 @@ export const Container = styled.section`
     }
     
     .title-name h1 {
-        font-size: 2.5rem;
+        font-size: 2rem;
         font-weight: bold;
+        
+        @media(min-width: 768px){
+            font-size: 2.5rem;
+        }
     }
 
     .about p {
@@ -29,12 +33,16 @@ export const Container = styled.section`
 
             margin-right: 10px;
             border-radius: 50px;
-            padding: 6px 30px;
+            padding: 3px 20px;
             font-size: 1rem;
             color: #D5D5D5;
             background-color: #2F2F2F;
             border: none;
             cursor: pointer;
+
+            @media(min-width: 768px){
+                padding: 6px 30px;
+            }
         }
 
         .btns {

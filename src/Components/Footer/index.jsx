@@ -9,18 +9,18 @@ const Footer = () => {
           <span>
             <a
               target="_blank"
-              href="https://www.linkedin.com/in/matheusbarcellos/"
+              href="https://www.linkedin.com/in/matheusbarcellos/" rel="noreferrer"
             >
               Linkedin
             </a>
           </span>
           <span>
-            <a target="_blank" href="https://github.com/MatheusBarcellosDev">
+            <a target="_blank" href="https://github.com/MatheusBarcellosDev" rel="noreferrer">
               Github
             </a>
           </span>
           <span>
-              <a target="_blank" href="https://www.instagram.com/matheusbarcelloos/">
+              <a target="_blank" href="https://www.instagram.com/matheusbarcelloos/" rel="noreferrer">
                 Instagram
               </a>
               

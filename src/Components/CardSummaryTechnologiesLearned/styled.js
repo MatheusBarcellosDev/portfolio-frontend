@@ -11,8 +11,12 @@ export const ContainerDate = styled.div`
             border: 2px solid #007CED;
             border-radius: 40px;
             background-color: #222222;
-            font-size: 0.8rem;
+            font-size: 0.5rem;
             margin-right: 0.8rem;
+
+            @media(min-width: 768px){
+                font-size: 0.8rem;
+            }
         }
     }
 

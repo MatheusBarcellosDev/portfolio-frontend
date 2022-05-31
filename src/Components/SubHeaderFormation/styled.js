@@ -14,7 +14,11 @@ export const Container = styled.div`
         
         h1 {
             letter-spacing: 0.10rem;
-            font-size: 2.0rem;
+            font-size: 1.5rem;
+
+            @media(min-width: 768px){
+                font-size: 2rem;
+            }
         }
 
         @media(min-width: 1600px){

@@ -37,16 +37,26 @@ export const Container = styled.section`
     }
 
     .tests{
-        width: 700px;
+        width: 375px;
         margin: 0 auto;
         height: 300px;
+
+        @media(min-width: 768px){
+            width: 600px;
+        }
+
+
     }
 
     .btn-testimonials{
         margin: 20px auto;
         display: flex;
-        width: 700px;
+        width: 350px;
         justify-content: end;
+
+        @media(min-width: 768px){
+            width: 600px;
+        }
     }
 
     .btn-testimonials button{
@@ -55,11 +65,15 @@ export const Container = styled.section`
         border: none;
         padding: 0.5rem 1rem;
         border-radius: 5px;
-        font-size: 1.1rem;
+        font-size: 0.6rem;
         font-weight: bold;
         letter-spacing: 0.10rem;
         cursor: pointer;
         transition: 0.3s;
+
+        @media(min-width: 768px){
+            font-size: 1rem;
+        }
     }
 
     .btn-testimonials button:hover{

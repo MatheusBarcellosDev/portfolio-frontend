@@ -4,16 +4,28 @@ export const Container = styled.form`
 
     display: flex;
     flex-direction: column;
-    padding: 4rem 6rem;
+    width: 300px;
+    padding: 1.5rem;
+
+    @media(min-width: 768px){
+        width: 100%;
+        padding: 4rem 6rem;
+    }
 
     h2{
-            font-size: 1.4rem;
+            font-size: 1.1rem;
             font-weight: bold;
             letter-spacing: 0.10rem;
             position: absolute;
-            top: 35px;
-            left: 35px;
+            top: 15px;
+            left: 15px;
             display: inline-block;
+
+            @media(min-width: 768px){
+                font-size: 1.4rem;
+                top: 20px;
+                left: 20px;
+            }
         }
 
         h2:before{
@@ -43,8 +55,9 @@ export const Container = styled.form`
         }
 
         textarea{
-            height: 60px;
+            height: 50px;
             margin-bottom: 1rem;
+
         }
 
         input, textarea{
@@ -53,6 +66,7 @@ export const Container = styled.form`
             border-radius: 5px;
             border: none;
             margin-bottom: 1rem;
+            width: 100%;
         }
 
         input:focus, textarea:focus{
@@ -62,6 +76,11 @@ export const Container = styled.form`
     span {
         color: red;
         position: absolute;
+        font-size: 0.8rem;
+
+        @media(min-width: 768px){
+            font-size: 1rem;
+        }
     }
 
     .form-group {
@@ -69,7 +88,7 @@ export const Container = styled.form`
     }
 
     .error-comentario {
-        margin-top: 60px;
+        margin-top: 50px;
     }
 
     .error-name {
@@ -84,17 +103,23 @@ export const Container = styled.form`
         background-color: #007ced;
         color: #fff;
         border: none;
-        padding: 0.5rem 1rem;
+        padding: 0.4rem 0.9rem;
         border-radius: 5px;
-        font-size: 1rem;
+        font-size: 0.7rem;
         font-weight: bold;
         letter-spacing: 0.10rem;
         cursor: pointer;
         transition: 0.3s;
 
         position: absolute;
-        bottom: 35px;
-        right: 35px;
+        bottom: 15px;
+        right: 15px;
+
+        @media(min-width: 768px){
+            bottom: 20px;
+            right: 20px;
+            font-size: 1rem;
+        }
     }
 
     button:hover {

@@ -4,6 +4,11 @@ export const Container = styled.div`
 
     padding: 50px;
     display: inline-block;
+    width: 375px;
+
+    @media(min-width: 768px){
+        width: 550px;
+    }
 
     .test {
 
@@ -16,8 +21,12 @@ export const Container = styled.div`
         border-radius: 100%;
         position: absolute;
         top: 15px;
-        left: 45px;
+        left: 20px;
         background-color: white;
+
+        @media(min-width: 768px){
+            left: 35px;
+        }
 
         img {
             border-radius: 100%;
@@ -34,10 +43,15 @@ export const Container = styled.div`
 
 
         .card-content {
-            width: 500px;
-            height: 135px;
+            width: 375px;
+            height: 145px;
             text-align:left;
             padding: 1.5rem;
+
+            @media(min-width: 768px){
+                width: 400px;
+                margin-left: 1rem;
+            }
 
             .card-testimonials{
                 font-size: 0.9rem;

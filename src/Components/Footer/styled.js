@@ -5,6 +5,8 @@ export const Container = styled.footer`
     margin-top: 1.5rem;
     border-top: 2px solid #2F2F2F;
     background-color: #252525;
+
+    width: 100%;
     
 
     .container-social-midia{
