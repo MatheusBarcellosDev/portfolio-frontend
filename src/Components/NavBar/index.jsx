@@ -9,7 +9,7 @@ const NavBar = ({show}) => {
                 <li><Link to="/">About Me</Link></li>
                 <li><Link to="/formation">Formation</Link></li>
                 <li><a href="/">Portfolio</a></li>
-                <li><a href="/">Contact</a></li>
+                <li><Link to="/contact">Contact</Link></li>
             </ul>
             <div className="iconReact">
                 <DiReact/>

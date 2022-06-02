@@ -6,6 +6,8 @@ import {
 
 import Home from "./pages/Home";
 import Formation from "./pages/Formation";
+import Contact from "./pages/Contact";
+import Thanks from "./pages/Thanks";
 
 
 const AppRoutes = () => {
@@ -14,6 +16,8 @@ const AppRoutes = () => {
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/formation" element={<Formation />} />
+                <Route path="/contact" element={<Contact />} />
+                <Route path="/thanks" element={<Thanks />} />
             </Routes>
         </Router>
     )

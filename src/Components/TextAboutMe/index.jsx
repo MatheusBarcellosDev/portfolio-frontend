@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import {Container} from "./styled";
 
 
@@ -31,7 +32,9 @@ const TextAboutMe = () => {
                         Download CV
                     </button>
                     <button className="btn-contact">
-                        Contact
+                        <Link to="/contact">
+                            Contact
+                        </Link>
                     </button>
                 </div>
             </div>

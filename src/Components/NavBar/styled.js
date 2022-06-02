@@ -2,9 +2,10 @@ import styled from "styled-components";
 
 export const Nav = styled.nav`
     width: 200px;
+    min-height: 500px;
     background-color: #2F2F2F;
     position: fixed;
-    height: calc(85% - 70px);
+    height: 60%;
     border-radius: 20px 0 0 20px;
     top: 50px;
     padding: 0 30px;
@@ -12,6 +13,10 @@ export const Nav = styled.nav`
     text-align: left;
     right: ${props => (props.show ? 0 : "-100%")};
     z-index: 1;
+
+    @media(min-width: 768px){
+        min-height: 0;
+    }
 
 
     .iconReact {

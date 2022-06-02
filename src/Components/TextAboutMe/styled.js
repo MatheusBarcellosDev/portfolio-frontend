@@ -56,11 +56,20 @@ export const Container = styled.section`
 
             .btn-contact {
                 border: 2px solid #D5D5D5;
+
+                a{
+                    text-decoration: none;
+                    color: #D5D5D5;
+                }
             }
 
             .btn-contact:hover {
                 background-color: #D5D5D5;
                 color: #2F2F2F;
+
+                a{
+                    color: #2F2F2F;
+                }
             }
         }
 

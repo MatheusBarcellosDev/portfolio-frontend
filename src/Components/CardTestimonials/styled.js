@@ -20,8 +20,8 @@ export const Container = styled.div`
         height: 80px;
         border-radius: 100%;
         position: absolute;
-        top: 30px;
-        left: 35px;
+        top: 20px;
+        left: 15px;
         background-color: white;
 
         @media(min-width: 768px){

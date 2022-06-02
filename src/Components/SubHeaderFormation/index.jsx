@@ -1,10 +1,10 @@
 import { Container } from "./styled"
 
-const SubHeader = () => {
+const SubHeader = ({title}) => {
     return (
         <Container>
             <div className="title-page">
-                <h1>Formações</h1>
+                <h1>{title}</h1>
             </div>
         </Container>
     )

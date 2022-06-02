@@ -3,18 +3,20 @@ import Header from "../../Components/Header";
 import { Container } from "./styled";
 import FormationContent from "../../Components/FormationContent";
 import SubHeader from "../../Components/SubHeaderFormation";
+import Footer from "../../Components/Footer";
 
-const divStyles = {
-}
 
 const Formation = () => {
   return (
-    <div style={divStyles}>
+    <div>
       <Header />
-      <SubHeader />
+      <SubHeader 
+      title="Formações"
+      />
       <Container>
         <FormationContent />
       </Container>
+      <Footer/>
     </div>
   );
 };
