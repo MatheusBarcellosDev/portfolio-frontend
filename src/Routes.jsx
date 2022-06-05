@@ -8,6 +8,7 @@ import Home from "./pages/Home";
 import Formation from "./pages/Formation";
 import Contact from "./pages/Contact";
 import Thanks from "./pages/Thanks";
+import Projetos from "./pages/Projetos";
 
 
 const AppRoutes = () => {
@@ -17,6 +18,7 @@ const AppRoutes = () => {
                 <Route path="/" element={<Home />} />
                 <Route path="/formation" element={<Formation />} />
                 <Route path="/contact" element={<Contact />} />
+                <Route path="/projects" element={<Projetos />} />
                 <Route path="/thanks" element={<Thanks />} />
             </Routes>
         </Router>

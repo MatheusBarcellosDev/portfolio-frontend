@@ -4,34 +4,21 @@ import api from "../api/Api";
 
 export const AuthContext = React.createContext({});
 
-const { REACT_APP_URL_LOGIN, REACT_APP_URL_GET_TESTIMONIALS, REACT_APP_PASSWORD, REACT_APP_USERNAME } = process.env;
 
 export const AuthProvider = (props) => {
-    const [user, setUser] = useState([]);
-    const [tokenApi, setIsToken] = useState(null);
+    const [coments, setComents] = useState([]);
 
     useEffect(() => {
-        async function login() {
-            const  token = await api.post(REACT_APP_URL_LOGIN, {
-                username: REACT_APP_USERNAME,
-                password: REACT_APP_PASSWORD,
-            });
-            await setIsToken(token.data.token);
-            if(tokenApi !== null) {
-                const user = await api.get(REACT_APP_URL_GET_TESTIMONIALS, {
-                    headers: {
-                        authorization: `${tokenApi}`,
-                    },
-                });
+        const getTestimonials = async () => {
+            const response = await api.get(process.env.REACT_APP_URL_GET_TESTIMONIALS);
+            const comentsFilter = response.data.comentarios.filter(coment => coment.status === true);
+            setComents(comentsFilter);
 
-                console.log(user);
-                await setUser(user.data);
-            }
         }
-        login();
-    }, [tokenApi]);
+        getTestimonials();
+    }, []);
 
     return (
-        <AuthContext.Provider value={{ user, tokenApi }}>{props.children}</AuthContext.Provider>
+        <AuthContext.Provider value={{ coments }}>{props.children}</AuthContext.Provider>
     );
 };

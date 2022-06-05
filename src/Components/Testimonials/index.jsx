@@ -39,11 +39,13 @@ const customStyles2 = {
 
 const Testimonials = () => {
 
-    const { user } = React.useContext(AuthContext);
+    const { coments } = React.useContext(AuthContext);
 
-    user.map(u => {
+    console.log(coments);
+
+    /* user.map(u => {
         console.log(u.user.name); 
-})
+}) */
 
 
 
@@ -79,11 +81,11 @@ const Testimonials = () => {
                     showStatus={false}
                     showThumbs={false}
                 > 
-                {user.length > 0 ? user.map(u => (
+                {coments.length > 0 ? coments.map(u => (
                     <CardTestimonials
-                        name={u.user.name}
-                        comentario={u.menssage}
-                        email={u.user.email}
+                        name={u.name}
+                        comentario={u.message}
+                        email={u.email}
                     />
                 )) : (
                     <CardTestimonials

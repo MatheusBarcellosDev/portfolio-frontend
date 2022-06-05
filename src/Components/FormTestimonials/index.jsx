@@ -10,9 +10,6 @@ import React from "react";
 
 import api from "../../api/Api";
 
-import { AuthContext } from '../../providers/auth';
-
-
 
 const schema = yup.object({
     comentario: yup.string().required("O comentario é obrigatorio"),
@@ -21,10 +18,6 @@ const schema = yup.object({
 }).required();
 
 const FormTestimonials = ({ handleModalClose, handleModalisOpen2 }) => {
-
-    const { tokenApi } = React.useContext(AuthContext);
-
-    console.log(tokenApi);
 
     const handleModalOpen = () => {
         handleModalClose(true);
@@ -42,24 +35,18 @@ const FormTestimonials = ({ handleModalClose, handleModalisOpen2 }) => {
         mode: "onChange",
     });
 
-    const createTestimonial = async (token, data) => {
-        if (token) {
-            await api.post('https://portfoliobackendv2.herokuapp.com/', {
-                comentario: data.comentario,
+    const createTestimonial = async (data) => {
+            await api.post(process.env.REACT_APP_URL_CREATE_TESTIMONIAL, {
+                message: data.comentario,
                 name: data.name,
                 email: data.email,
-            }, {
-                headers: {
-                    authorization: `${token}`,
-                }
-            }
-            )
-        }
+            },
+            );
     }
 
     const onSubmit = (data) => {
         handleModalOpen();
-        createTestimonial(tokenApi, data);
+        createTestimonial(data);
     };
 
 
@@ -98,7 +85,6 @@ const FormTestimonials = ({ handleModalClose, handleModalisOpen2 }) => {
                 <button
                     type="submit"
                     disabled={!formState.isValid}
-                /* onClick={handleModalOpen} */
                 >
                     Enviar
                 </button>
