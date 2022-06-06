@@ -15,10 +15,10 @@ const CardProjects = ({title, gif, description, url, status}) => {
                 </div>
             <div className="card-projects-description">
                 <p>{description}</p>
-                <span
+            </div>
+            <span
                     style={status === 'Finalizado' ? {color: '#00ff00'} : {color: '#ff0000'}}
                 >{status}</span>
-            </div>
             </div>
             
             </a>

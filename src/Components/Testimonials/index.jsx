@@ -13,7 +13,7 @@ import {AuthContext} from '../../providers/auth';
 
 const customStyles = {
     content: {
-        top: '50%',
+        top: '35%',
         left: '50%',
         right: 'auto',
         bottom: 'auto',
@@ -26,7 +26,7 @@ const customStyles = {
 
 const customStyles2 = {
     content: {
-        top: '50%',
+        top: '35%',
         left: '50%',
         right: 'auto',
         bottom: 'auto',

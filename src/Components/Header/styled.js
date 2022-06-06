@@ -17,9 +17,10 @@ export const Nav = styled.header`
 
     .main-name{
         white-space: nowrap;
-        font-size: 1.1rem;
+        font-size: 0.9rem;
         
        a{
+            font-size: 1.2rem;
             text-decoration: none;
             color: #fff;
        }
@@ -68,6 +69,3 @@ export const Nav = styled.header`
 
     }
 `;
-
-
-

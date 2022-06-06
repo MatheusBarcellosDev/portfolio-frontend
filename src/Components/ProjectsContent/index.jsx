@@ -3,6 +3,7 @@ import gifProjectAppRecipes from '../../assets/gifs/GifProjeto.gif'
 import gifJogoTrivia from '../../assets/gifs/ProjetoJogoDeTrivia.gif'
 import gifTrybeWallet from '../../assets/gifs/ProjetoTrybeWallet.gif'
 import onlineStore from '../../assets/images/onlineStore.png'
+import TryeTunes from '../../assets/gifs/TrybeTunes.gif'
 
 const ProjectsContent = () => {
     return (
@@ -29,12 +30,19 @@ const ProjectsContent = () => {
                 status="Finalizado"
             />
             <CardProjects
-                url="https://glittering-llama-df75aa.netlify.app/"
-                title="Online Store"
+                url="https://starlit-cannoli-b54690.netlify.app"
+                title="Projeto Online Store"
                 gif={onlineStore}
-                description="Uma aplicacao que consome uma Api do Mercado Livre e adiciona os produtos na loja."
+                description="Uma aplicação que consome uma Api do Mercado Livre e adiciona os produtos na loja."
                 status="Em desenvolvimento"
-            />  
+            />
+            <CardProjects
+                url="https://playful-gingersnap-49f946.netlify.app"
+                title="Projeto Trybe Tunes"
+                gif={TryeTunes}
+                description="Uma aplicação que consome uma Api do Spotify e adiciona as músicas como favorita."
+                status="Finalizado"
+            />    
 
         </div>
 

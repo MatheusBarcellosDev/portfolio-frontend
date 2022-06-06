@@ -49,6 +49,8 @@ export const Container = styled.div`
             width: 80%;
             margin: 0 auto;
             padding: 1rem 0;
+            text-align: left;
+
         }
 
         @media(min-width: 768px){
@@ -79,7 +81,9 @@ export const Container = styled.div`
         }
 
         span{
-            font-size: 0.9rem;
+            font-size: 0.7rem;
+            padding: 0.5rem;
+            float: right;
         }
     }
 
