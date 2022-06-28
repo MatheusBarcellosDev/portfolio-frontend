@@ -6,6 +6,7 @@ import onlineStore from '../../assets/images/onlineStore.png'
 import TryeTunes from '../../assets/gifs/TrybeTunes.gif'
 import ProjetoTryunfo from '../../assets/gifs/ProjetoTryunfo.gif'
 import ProjetoSolarSystem from '../../assets/gifs/ProjetoSolarSystem.gif'
+import ProjetoShoppingCart from '../../assets/gifs/ProjetoShoppingCart.gif'
 
 const ProjectsContent = () => {
     return (
@@ -58,7 +59,13 @@ const ProjectsContent = () => {
                 gif={ProjetoSolarSystem}
                 description="Essa aplicação simula uma visualização do Sistema Solar, bem como informações sobre diversas missões espacias que ocorreram ao longo da história."
                 status="Finalizado"
-            />        
+            /><CardProjects
+                url="https://wonderful-frangollo-199059.netlify.app"
+                title="Projeto Shoping Cart"
+                gif={ProjetoShoppingCart}
+                description="Uma aplicação que consome a api do mercado-livre e adiciona os produtos no carrinho."
+                status="Finalizado"
+            />     
 
         </div>
 
