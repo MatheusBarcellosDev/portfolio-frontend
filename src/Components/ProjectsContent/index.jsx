@@ -60,7 +60,7 @@ const ProjectsContent = () => {
                 url="https://tubular-crisp-628639.netlify.app/"
                 title="Projeto SolarSystem"
                 gif={ProjetoSolarSystem}
-                description="Essa aplicação simula uma visualização do Sistema Solar, bem como informações sobre diversas missões espacias que ocorreram ao longo da história."
+                description="Essa aplicação simula uma visualização do Sistema Solar, bem como informações sobre diversas missões espacias."
                 status="Finalizado"
             />
             <CardProjects
@@ -74,7 +74,7 @@ const ProjectsContent = () => {
                 url="https://stirring-starlight-e11340.netlify.app"
                 title="Projeto Trybe Warts"
                 gif={ProjetoTrybeWarts}
-                description="Um aplicação que permite o usuário se cadastrar na escola Trybe Warts."
+                description="Um aplicação que permite o usuário se cadastrar na escola Trybe Warts e recebe um carta."
                 status="Finalizado"
             />
             <CardProjects
