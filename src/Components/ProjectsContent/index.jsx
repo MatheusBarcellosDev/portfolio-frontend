@@ -4,6 +4,8 @@ import gifJogoTrivia from '../../assets/gifs/ProjetoJogoDeTrivia.gif'
 import gifTrybeWallet from '../../assets/gifs/ProjetoTrybeWallet.gif'
 import onlineStore from '../../assets/images/onlineStore.png'
 import TryeTunes from '../../assets/gifs/TrybeTunes.gif'
+import ProjetoTryunfo from '../../assets/gifs/ProjetoTryunfo.gif'
+import ProjetoSolarSystem from '../../assets/gifs/ProjetoSolarSystem.gif'
 
 const ProjectsContent = () => {
     return (
@@ -42,7 +44,21 @@ const ProjectsContent = () => {
                 gif={TryeTunes}
                 description="Uma aplicação que consome uma Api do Spotify e adiciona as músicas como favorita."
                 status="Finalizado"
-            />    
+            />
+            <CardProjects
+                url="https://jade-griffin-466656.netlify.app/"
+                title="Projeto Tryunfo"
+                gif={ProjetoTryunfo}
+                description="Uma aplicação feita para criar cartas super. É possivel tambem realizar o filtro das cartas cadastradas."
+                status="Finalizado"
+            />
+            <CardProjects
+                url="https://tubular-crisp-628639.netlify.app/"
+                title="Projeto SolarSystem"
+                gif={ProjetoSolarSystem}
+                description="Essa aplicação simula uma visualização do Sistema Solar, bem como informações sobre diversas missões espacias que ocorreram ao longo da história."
+                status="Finalizado"
+            />        
 
         </div>
 
