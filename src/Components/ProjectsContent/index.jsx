@@ -9,6 +9,7 @@ import ProjetoSolarSystem from '../../assets/gifs/ProjetoSolarSystem.gif'
 import ProjetoShoppingCart from '../../assets/gifs/ProjetoShoppingCart.gif'
 import ProjetoTrybeWarts from '../../assets/gifs/ProjetoTrybeWarts.gif'
 import ProjetoTodo from '../../assets/gifs/ProjetoTodo.gif'
+import ProjetoPixelsArt from '../../assets/gifs/ProjetoPixelsArt.gif'
 
 const ProjectsContent = () => {
     return (
@@ -81,6 +82,13 @@ const ProjectsContent = () => {
                 title="Projeto Todo list Trybe"
                 gif={ProjetoTodo}
                 description="Uma aplicação que permite o usuário cadastrar tarefas."
+                status="Finalizado"
+            />
+            <CardProjects
+                url="https://joyful-souffle-7bf1ca.netlify.app"
+                title="Projeto Pixels Art"
+                gif={ProjetoPixelsArt}
+                description="Uma aplicação que permite o usuário desenhar pixels."
                 status="Finalizado"
             />      
 
