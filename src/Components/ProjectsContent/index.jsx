@@ -7,6 +7,8 @@ import TryeTunes from '../../assets/gifs/TrybeTunes.gif'
 import ProjetoTryunfo from '../../assets/gifs/ProjetoTryunfo.gif'
 import ProjetoSolarSystem from '../../assets/gifs/ProjetoSolarSystem.gif'
 import ProjetoShoppingCart from '../../assets/gifs/ProjetoShoppingCart.gif'
+import ProjetoTrybeWarts from '../../assets/gifs/ProjetoTrybeWarts.gif'
+import ProjetoTodo from '../../assets/gifs/ProjetoTodo.gif'
 
 const ProjectsContent = () => {
     return (
@@ -59,13 +61,28 @@ const ProjectsContent = () => {
                 gif={ProjetoSolarSystem}
                 description="Essa aplicação simula uma visualização do Sistema Solar, bem como informações sobre diversas missões espacias que ocorreram ao longo da história."
                 status="Finalizado"
-            /><CardProjects
+            />
+            <CardProjects
                 url="https://wonderful-frangollo-199059.netlify.app"
                 title="Projeto Shoping Cart"
                 gif={ProjetoShoppingCart}
                 description="Uma aplicação que consome a api do mercado-livre e adiciona os produtos no carrinho."
                 status="Finalizado"
-            />     
+            />
+            <CardProjects
+                url="https://stirring-starlight-e11340.netlify.app"
+                title="Projeto Trybe Warts"
+                gif={ProjetoTrybeWarts}
+                description="Um aplicação que permite o usuário se cadastrar na escola Trybe Warts."
+                status="Finalizado"
+            />
+            <CardProjects
+                url="https://gorgeous-moonbeam-af7418.netlify.app"
+                title="Projeto Todo list Trybe"
+                gif={ProjetoTodo}
+                description="Uma aplicação que permite o usuário cadastrar tarefas."
+                status="Finalizado"
+            />      
 
         </div>
 
