@@ -24,10 +24,11 @@ const TextAboutMe = () => {
             </div>
             <div className="container-btns">
                 <div className="btns">
-                    <button className="btn-cv">
+                    <iframe name="iframe_download" class="hidden"></iframe>
+                    <a className="btn-cv btn" target="iframe_download" href='https://drive.google.com/u/0/uc?id=1m6fcLm4QovGO041HkwgOMWSTM5464Z1H&export=download'>
                         Download CV
-                    </button>
-                    <button className="btn-contact">
+                    </a>
+                    <button className="btn-contact btn">
                         <Link to="/contact">
                             Contact
                         </Link>

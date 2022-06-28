@@ -21,6 +21,10 @@ export const Container = styled.section`
         }
     }
 
+    .hidden {
+        display: none;
+    }
+
     .about p {
         font-size: 0.90rem;
         text-align: left;
@@ -29,7 +33,7 @@ export const Container = styled.section`
     }
 
     .container-btns {
-        .btns button {
+        .btn {
 
             margin-right: 10px;
             border-radius: 50px;
