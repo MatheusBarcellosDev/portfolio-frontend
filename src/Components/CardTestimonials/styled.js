@@ -43,27 +43,35 @@ export const Container = styled.div`
 
 
         .card-content {
-            width: 300px;
-            height: 150px;
+            width: 250px;
+            height: 160px;
             text-align:left;
-            padding: 0.5rem;
+            padding-top: 1rem;        
+
+            p{
+                margin: 0;
+            }
+            
 
             @media(min-width: 768px){
                 width: 400px;
                 margin-left: 1rem;
+
+                p{
+                    margin-bottom: 1rem;
+                }
             }
 
             .card-testimonials{
-                font-size: 0.9rem;
+                font-size: 0.8rem;
                 font-style: italic;
                 color: #D5D5D5;
-            }
+           }
 
             .card-testimonials-name{
                 font-size: 1rem;
                 font-weight: bold;
                 color: #fff;
-                padding-top: 0.5rem;
             }
         }
 
