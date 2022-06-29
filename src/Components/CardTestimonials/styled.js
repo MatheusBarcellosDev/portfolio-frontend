@@ -44,9 +44,9 @@ export const Container = styled.div`
 
         .card-content {
             width: 300px;
-            height: 145px;
+            height: 150px;
             text-align:left;
-            padding: 1.5rem;
+            padding: 0.5rem;
 
             @media(min-width: 768px){
                 width: 400px;
@@ -63,7 +63,7 @@ export const Container = styled.div`
                 font-size: 1rem;
                 font-weight: bold;
                 color: #fff;
-                padding-top: 1rem;
+                padding-top: 0.5rem;
             }
         }
 
